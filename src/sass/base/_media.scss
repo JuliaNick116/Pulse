@@ -1,0 +1,281 @@
+@media (max-width: 1200px) {
+    .promo {
+        padding-bottom: 80px;
+        .header {
+            justify-content: space-around;
+            &__official {
+                font-size: 13px;
+            }
+        }
+        .button {
+            width: 170px;
+            &_main {
+                width: 250px;
+            }
+        }
+        &__wrapper {
+            margin-right: 40px; 
+        }
+        &__icons {
+            margin-top: 60px;
+        }
+        &__header {
+            font-size: 38px;
+            line-height: 38px;
+        }
+        &__subheader {
+            font-size: 20px;
+            line-height: 20px;
+        }
+    }
+    .advantages {
+        padding: 60px 0 80px 0;
+        .title {
+            font-size: 28px;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .promo {
+        padding-bottom: 70px;
+        .header {
+            &__logo {
+                width: 220px;
+            }
+            &__phone {
+                font-size: 16px;
+            }
+            .button {
+                width: 150px;
+                height: 35px;
+                font-size: 13px;
+                &_main {
+                    width: 260px;
+                }
+            }
+        }
+        &__header {
+            font-size: 35px;
+            line-height: 35px;
+        }
+        &__icons {
+            width: 410px;
+        }
+        &__icon {
+            width: 100px;
+            font-size: 13px;
+        }
+    }
+    .advantages {
+        padding: 50px 0 60px 0;
+        .title {
+            font-size: 25px;
+        }
+        &__wrapper {
+            justify-content: space-around;
+        }
+        &__item {
+            width: 225px;
+            img {
+                margin-bottom: 25px;
+            }
+        }
+        &__subtitle {
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+        &__descr {
+            font-size: 13px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .promo {
+        min-height: 610px;
+        padding-bottom: 60px;
+        .header {
+            padding-right: 50px;
+            &__logo {
+                width: 215px;
+            }
+            &__official {
+                display: none;
+            }
+            .menu {
+                display: block;
+                position: fixed;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                top: 0;
+                left: -100%;
+                width: 60%;
+                height: 100vh;
+                padding: 20px 15px;
+                background-color: #f6f6f6;
+                transition: 0.6s all;
+                &_active {
+                    left: 0;
+                }
+                &__item {
+                    padding-right: 0;
+                    border: none;
+                    margin: 15px 0;
+                    text-align: center;
+                    text-transform: uppercase;
+                    font-size: 20px;
+                    font-weight: 500;
+                }
+                &__link {
+                    color: black;
+                }
+            }
+            .hamburger {
+                display: block;
+                position: fixed;
+                right: 20px;
+                transform: translateY(-50%);
+                width: 30px;
+                height: 15px;
+                span {
+                    display: block;
+                    height: 3px;
+                    width: 100%;
+                    background-color: #f6f6f6;
+                    margin-bottom: 3px;
+                    transition: 0.5s all;
+                }
+                &_active {
+                    span {
+                        margin-bottom: -2px;
+                        &:first-child {
+                            transform: translateY(3px) rotate(-45deg);
+                        }
+                        &:nth-child(2) {
+                            display: none;
+                        }
+                        &:nth-child(3) {
+                            transform: translateY(3px) rotate(45deg)
+                        }
+                    }
+                }
+            }
+        }
+        &__wrapper {
+            margin-top: 80px;
+            margin-right: 0;
+            align-items: center;
+        }
+        &__header {
+            font-size: 30px;
+            line-height: 30x;
+        }
+        &__subheader {
+            margin-top: 8px;
+            font-size: 17px;
+            line-height: 17px;
+        }
+        &__icons {
+            width: 400px;
+            margin-top: 50px;
+        }
+        .button {
+            &_main {
+                width: 240px;
+                font-size: 15px;
+            }
+        }
+    }
+    .advantages {
+        padding: 40px 0 40px 0;
+        .title {
+            font-size: 22px;
+        }
+        &__wrapper {
+            margin-top: 50px;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__item {
+            width: 247px;
+            margin-bottom: 20px;
+            img {
+                margin-bottom: 15px;
+
+            }
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .promo {
+        min-height: 550px;
+        padding-bottom: 50px;
+        .header {
+            align-items: center;
+            padding-right: 0;
+            &__logo {
+                width: 220px;
+                margin-bottom: 20px;
+            }
+            &__phone {
+                display: none;
+            }
+            .button {
+                display: none;
+            }
+            .hamburger {
+                margin-bottom: 17px;
+            }
+            .menu {
+                width: 70%;
+                &__item {
+                    font-size: 16px;
+                    margin: 17px 0;
+                }
+            }
+            .hamburger {
+                width: 28px;
+            }
+        }
+        .button_main {
+            margin-top: 50px;
+            width: 220px;
+            height: 45px;
+            font-size: 14px;
+        }
+        &__wrapper {
+            margin-top: 50px;
+        }
+        &__header {
+            font-size: 20px;
+            line-height: 20px;
+        }
+        &__subheader {
+            font-size: 13px;
+        }
+        &__icons {
+            width: 310px;
+        }
+        &__icon {
+            font-size: 12px;
+        }
+        &__link {
+            font-size: 14px;
+        }
+    }
+    .advantages {
+        padding: 30px 0 40px 0;
+        .title {
+            font-size: 19px;
+        }
+        &__wrapper {
+            margin-top: 40px;
+        }
+        &__subtitle {
+            margin-bottom: 10px;
+        }
+    }
+}
