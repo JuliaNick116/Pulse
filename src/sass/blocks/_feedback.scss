@@ -1,0 +1,51 @@
+.feedback {
+    min-height: 950px;
+    .title {
+        margin-bottom: 70px;
+    }
+    &-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        &:last-child {
+            hr {
+                display: none;
+            }
+            margin-bottom: 71px;
+        }
+        &__img {
+            min-height: 169px;
+        }
+        &__text {
+            margin-left: 62px;
+        }
+        &__title {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 18px;
+            color: #0d0d0d;
+            margin-bottom: 10px;
+        }
+        &__subtitle {
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 14px;
+            color: #646464;
+            margin-bottom: 19px;
+        }
+        &__descr {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 19px;
+            color: #0d0d0d;
+        }
+        hr {
+            width: 100%;
+            background-color: #f6f6f6;
+            margin-top: 48px;
+            margin-bottom: 50px;
+            border-bottom: none;
+        }
+    }
+}
