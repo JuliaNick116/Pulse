@@ -1,7 +1,9 @@
 .feedback {
     min-height: 950px;
+    padding-bottom: 71px;
     .title {
         margin-bottom: 70px;
+        line-height: 30px;
     }
     &-item {
         display: flex;
@@ -12,7 +14,6 @@
             hr {
                 display: none;
             }
-            margin-bottom: 71px;
         }
         &__img {
             min-height: 169px;
